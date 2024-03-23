@@ -78,6 +78,20 @@ input {
   overflow-y: auto; 
 }
 
+.highlight {
+  color: #ffffff; 
+  transition: color 0.3s;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.highlight:hover {
+  color: #FCF900; 
+  text-decoration: none;
+}
+
 .footer-st {
   background: transparent;
   color: white;
