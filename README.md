@@ -1,4 +1,4 @@
-# Welcome to the [Bolt URL!](https://bolturl.site/) Project.
+## Welcome to the [Bolt URL!](https://bolturl.site/) Project.
 This Link Shortener web app showcases how Python can do anything. Using Python (Flask Framework) with Templates and a little of style. For detailed insights, please visit [this link](https://ivanluna.dev/projects/post-python-bolturl/).
 
 ### Demo
