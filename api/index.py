@@ -79,10 +79,5 @@ def redirect(url_code):
         app.logger.error(error_message)
         return "Error interno del servidor"
 
-
-@app.route('/user_agreements')
-def user_agreements():
-    return render_template('user_agreements.html')
-
 if __name__ == '__main__':
     app.run(debug=True, port=8000)

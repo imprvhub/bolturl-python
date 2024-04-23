@@ -7,7 +7,7 @@ Visit the live app: [bolturl.site](https://bolturl.site)
 
 ### Preview
 
-![Preview](./api/static/images/preview.png "Preview")
+![Preview](./api/static/assets/misc/preview.png "Preview")
 
 
 ### Key Features:

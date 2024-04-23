@@ -10,6 +10,8 @@ body {
   background-color: #f4f4f4;
 }
 
+
+
 form {
   text-align: center;
   background-color: transparent; 
@@ -262,6 +264,98 @@ display: inline-block;
   }
 }
 
+/* MODAL STYLES
+-------------------------------*/
+.jw-modal {
+  /* modals are hidden by default */
+  display: none;
+
+  /* modal container fixed across whole screen */
+  position: fixed;
+  inset: 0;
+
+  /* z-index must be higher than everything else on the page */
+  z-index: 10000;
+  
+  /* semi-transparent black background exposed by padding */
+  background-color: rgba(0, 0, 0, .75);
+  padding: 40px;
+
+  /* enables scrolling for tall modals */
+  overflow: auto;
+}
+
+.jw-modal.open {
+  display: block;
+}
+
+.jw-modal-body {
+  padding: 20px;
+  background: linear-gradient(to right, #44ada6, #4d34db); 
+}
+
+body.jw-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
+}
+
+.button-close {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-close:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-close:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-close:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-close:focus {
+  outline: 1px transparent;
+}
+
+.button-close:before {
+  display: none;
+}
+
+.button-close:-webkit-details-marker {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
   input {
@@ -282,3 +376,4 @@ display: inline-block;
   }
 }
     
+
