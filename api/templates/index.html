@@ -3,7 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BoltURL - A Python Url Shortener Web App">
+    <meta name="keywords" content="URL Shortener, Python, Web App">
     <title>BoltURL - A Python Url Shortener Web App.</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_id }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ google_analytics_id }}');
+    </script>
+
+    <!-- Clarity tag -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "{{ clarity_id }}");
+    </script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='assets/logos/logo192.png') }}">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ url_for('static', filename='assets/logos/logo180.png') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='assets/logos/logo192.png') }}">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ url_for('static', filename='assets/logos/logo180.png') }}">
@@ -74,9 +100,11 @@
             <h4 style="font-size: 12px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">8. Limitation of Liability</h4>
             <p style="font-size: 10px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">BoltURL will not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use the website.</p>
             <h4 style="font-size: 12px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">9. Privacy Policy</h4>
-            <p style="font-size: 10px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">By using our website, you agree to the use of cookies. Our Cookie Policy provides details on what cookies are, how we use them, the involvement of third-party partners, your cookie options, and additional information. Cookies are small pieces of text sent to your web browser from a visited website. They are stored in your browser, allowing the website or third parties to recognize you, simplifying your subsequent visits and improving the website's utility.
-                During your use of the website, we may place various cookie files in your web browser, serving essential and analytical purposes.
-                In addition to ours, we may use third-party cookies to report website usage statistics, deliver ads, etc. If you wish to delete or reject cookies, please refer to your browser's help pages. Note that such actions may limit features, preference storage, and page display. For popular browsers like Google Chrome, Opera, Mozilla Firefox, and Safari, you can find specific instructions on their respective support pages. Explore allaboutcookies.org and networkadvertising.org for comprehensive insights.</p>
+            <p style="font-size: 10px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">
+                By using our website, you agree to the use of cookies and consent to the use of tracking technologies such as Google Analytics. Our Cookie Policy provides details on what cookies are, how we use them, the involvement of third-party partners, your cookie options, and additional information. Cookies are small pieces of text sent to your web browser from a visited website. They are stored in your browser, allowing the website or third parties to recognize you, simplifying your subsequent visits and improving the website's utility. 
+                During your use of the website, we may place various cookie files in your web browser, serving essential and analytical purposes. 
+                In addition to ours, we may use third-party cookies to report website usage statistics, deliver ads, etc. If you wish to delete or reject cookies, please refer to your browser's help pages. Note that such actions may limit features, preference storage, and page display. For popular browsers like Google Chrome, Opera, Mozilla Firefox, and Safari, you can find specific instructions on their respective support pages. Explore allaboutcookies.org and networkadvertising.org for comprehensive insights. If you do not agree with the use of cookies and tracking technologies, please discontinue using the application.
+            </p>
             <h4 style="font-size: 12px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">10. Contact</h4>
             <p style="font-size: 10px; color: rgba(255, 255, 255, 0.8); letter-spacing: 2px; text-transform: uppercase;">For any inquiries or concerns about this user agreement, terms and conditions, or privacy policies, please email us at contact@ivanluna.dev.</p>
                 

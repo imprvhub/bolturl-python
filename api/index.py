@@ -55,7 +55,9 @@ def process_input(original_url):
 
 @app.route('/')
 def index():
-    return render_template('index.html', bolted_url=None)
+    google_analytics_id = os.getenv('GOOGLE_ANALYTICS_ID')
+    clarity_id = os.getenv('CLARITY_ID')
+    return render_template('index.html', google_analytics_id=google_analytics_id, clarity_id=clarity_id, bolted_url=None)
 
 @app.route('/bolted', methods=['POST'])
 def shorten():
